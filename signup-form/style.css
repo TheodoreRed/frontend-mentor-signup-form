@@ -1,0 +1,111 @@
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-image: url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(0, 100%, 74%);
+  padding: 40px 30px;
+}
+
+h1 {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.header-p {
+  text-align: center;
+  color: white;
+  font-size: medium;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.cta {
+  display: block;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 10px 0 0 hsl(0deg 0% 0% / 21%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 10px 0 0 hsl(0deg 0% 0% / 21%);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-weight: 800;
+}
+
+form input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+form p {
+  text-align: center;
+  font-size: x-small;
+  color: hsl(246, 25%, 77%);
+}
+.form-accent {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 780px) {
+  body {
+    display: flex;
+    align-items: center;
+    background-image: url(images/bg-intro-desktop.png);
+  }
+  header {
+    width: 50%;
+    padding: 20px;
+  }
+  main {
+    width: 50%;
+  }
+
+  h1,
+  .header-p {
+    padding: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  .header-p {
+    font-size: small;
+  }
+}
